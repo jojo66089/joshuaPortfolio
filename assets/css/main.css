@@ -107,3 +107,92 @@ button {
    color: white;
 }
 
+.button-row-container2 {
+    display: flex;
+    flex-direction: column; /* Ensures the button and image are in a column layout */
+    position: absolute;
+  bottom: 35px; /* Adjust the value to control how far from the bottom */
+  left: 50%;
+  right:  30%;
+  transform: translateX(-20%);
+    max-width: 50%;
+    max-height: 70%;
+    transition: 0.3ms;
+}
+.button-row-container2 img{
+   position: top;
+   align-items: top;
+    max-width: 70%;
+    max-height: 70%;
+    z-index: 1;
+    transition: 0.2s ease-in-out;
+    padding-top: 0px;
+    padding-right: 70px;
+    padding-bottom: 0px;
+}
+.button-row-container2:hover img {
+   z-index: 3; 
+   animation: strobe 0.2s infinite alternate;
+   filter: brightness(0) invert(1);
+   
+}
+
+.button-row-container3 {
+   display: flex;
+   flex-direction: column; /* Ensures the button and image are in a column layout */
+   position: absolute;
+ bottom: 35px; /* Adjust the value to control how far from the bottom */
+ left: 50%;
+ right:  30%;
+ transform: translateX(-20%);
+   max-width: 50%;
+   max-height: 70%;
+   transition: 0.3ms;
+}
+.button-row-container3 img{
+  position: top;
+  align-items: top;
+   max-width: 70%;
+   max-height: 70%;
+   z-index: 1;
+   transition: 0.2s ease-in-out;
+   padding-top: 0px;
+   padding-right: 70px;
+   padding-bottom: 0px;
+}
+.button-row-container3:hover img {
+  z-index: 3; 
+  animation: strobe 0.2s infinite alternate;
+  filter: brightness(0) invert(1);
+  
+}
+
+.button-row-container4 {
+   display: flex;
+   flex-direction: column; /* Ensures the button and image are in a column layout */
+   position: absolute;
+ bottom: 35px; /* Adjust the value to control how far from the bottom */
+ left: 50%;
+ right:  30%;
+ transform: translateX(-20%);
+   max-width: 50%;
+   max-height: 70%;
+   transition: 0.3ms;
+}
+.button-row-container4 img{
+  position: top;
+  align-items: top;
+   max-width: 70%;
+   max-height: 70%;
+   z-index: 1;
+   transition: 0.2s ease-in-out;
+   padding-top: 0px;
+   padding-right: 70px;
+   padding-bottom: 0px;
+}
+.button-row-container4:hover img {
+  z-index: 3; 
+  animation: strobe 0.2s infinite alternate;
+  filter: brightness(0) invert(1);
+  
+}
