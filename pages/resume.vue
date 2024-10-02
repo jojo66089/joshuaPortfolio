@@ -12,7 +12,7 @@ const route = useRoute()
 
         <div class="resume-header">
 
-        <h2><img src="/Users/joshuaguillen/Desktop/website_portfolio/joshuaPortfolio/joshuaPortfolio/1xx/1x/1x/1x/Asset 24.png"></h2>
+        <h2><img src="~assets/1xx/1x/1x/1x/Asset 24.png"></h2>
         <p>New York, NY | (505) 550-6909 | <a href="mailto:jg6949@nyu.edu">jg6949@nyu.edu</a> | <a href="http://www.joshua-guillen.com">Portfolio</a></p>
         </div>
 
@@ -72,9 +72,9 @@ const route = useRoute()
         <div class="button-row-container4">
                     <NuxtLink to="/" class="projects-button">
                         <button class="home-button">
-                            <img src="/Users/joshuaguillen/Desktop/website_portfolio/joshuaPortfolio/joshuaPortfolio/1xx/1x/1x/1x/Asset 25.png" alt="buttonpng" border="0" />
+                            <img src="~assets/1xx/1x/1x/1x/Asset 25.png" alt="buttonpng" border="0" />
                         </button>
-                        <img src="/Users/joshuaguillen/Desktop/website_portfolio/joshuaPortfolio/joshuaPortfolio/1xx/1x/1x/Asset 17.png" alt="buttonpng" border="0" />
+                        <img src="~assets/1xx/1x/1x/Asset 17.png" alt="buttonpng" border="0" />
                     </NuxtLink>
             </div>
 

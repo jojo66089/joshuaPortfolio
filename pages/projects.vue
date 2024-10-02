@@ -5,7 +5,7 @@ const route = useRoute()
 <template>
       <!-- Projects Section -->
     <div class="projects-section">
-        <img src="/Users/joshuaguillen/Desktop/website_portfolio/joshuaPortfolio/joshuaPortfolio/1xx/1x/1x/1x/Asset 24.png">
+        <img src="~assets/1xx/1x/1x/1x/Asset 24.png">
       <h2>Projects </h2>
 
       <!-- Sporacle Project Overview -->
@@ -66,9 +66,9 @@ const route = useRoute()
       <div class="button-row-container2">
             <NuxtLink to="/" class="projects-button">
                 <button class="home-button">
-                    <img src="/Users/joshuaguillen/Desktop/website_portfolio/joshuaPortfolio/joshuaPortfolio/1xx/1x/1x/1x/Asset 25.png" alt="buttonpng" border="0" />
+                    <img src="~assets/1xx/1x/1x/1x/Asset 25.png" alt="buttonpng" border="0" />
                 </button>
-                <img src="/Users/joshuaguillen/Desktop/website_portfolio/joshuaPortfolio/joshuaPortfolio/1xx/1x/1x/Asset 17.png" alt="buttonpng" border="0" />
+                <img src="~assets/1xx/1x/1x/Asset 17.png" alt="buttonpng" border="0" />
             </NuxtLink>
         </div>
     </div>
