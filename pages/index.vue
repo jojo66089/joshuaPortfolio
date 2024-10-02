@@ -28,8 +28,8 @@ const route = useRoute()
         </div>
 
         <div class="button-row-container">
-          <NuxtLink to="/contact" class="contact-button">
-          <button class="contact-button">
+          <NuxtLink to="/contact" class="contact-button2">
+          <button class="contact-butto2n">
             <img src="/Users/joshuaguillen/Desktop/website_portfolio/joshuaPortfolio/joshuaPortfolio/1xx/1x/Asset 7.png" alt="buttonpng" border="0" />
           </button>
           <img src="/Users/joshuaguillen/Desktop/website_portfolio/joshuaPortfolio/joshuaPortfolio/1xx/1x/1x/Asset 21.png" alt="buttonpng" border="0" />

@@ -8,6 +8,10 @@ body {
    align-items: center;
    height: 100vh;
 }
+h1 img{
+   margin-top: auto;
+   margin-bottom: auto;
+}
 
 h2, p, button {
    background-color: #c6075a;
@@ -108,27 +112,27 @@ button {
 }
 
 .button-row-container2 {
-    display: flex;
-    flex-direction: column; /* Ensures the button and image are in a column layout */
-    position: absolute;
-  bottom: 35px; /* Adjust the value to control how far from the bottom */
-  left: 50%;
-  right:  30%;
-  transform: translateX(-20%);
-    max-width: 50%;
-    max-height: 70%;
-    transition: 0.3ms;
+   display: flex;
+   flex-direction: column; /* Ensures the button and image are in a column layout */
+   position: relative;
+   bottom: 35px; /* Adjust the value to control how far from the bottom */
+   left: 50%;
+   right:  60%;
+   transform: translateX(-20%);
+   max-width: 50%;
+   max-height: 70%;
+   transition: 0.3ms;
+   padding-top: 0px;
 }
 .button-row-container2 img{
    position: top;
    align-items: top;
-    max-width: 70%;
-    max-height: 70%;
+    max-width: 30%;
+    max-height: 30%;
     z-index: 1;
     transition: 0.2s ease-in-out;
-    padding-top: 0px;
-    padding-right: 70px;
-    padding-bottom: 0px;
+    padding-top: 20px;
+    padding-right: 550px;
 }
 .button-row-container2:hover img {
    z-index: 3; 
@@ -140,25 +144,26 @@ button {
 .button-row-container3 {
    display: flex;
    flex-direction: column; /* Ensures the button and image are in a column layout */
-   position: absolute;
- bottom: 35px; /* Adjust the value to control how far from the bottom */
- left: 50%;
- right:  30%;
- transform: translateX(-20%);
+   position: relative;
+   bottom: 35px; /* Adjust the value to control how far from the bottom */
+   left: 50%;
+   right:  90%;
+   transform: translateX(-20%);
    max-width: 50%;
    max-height: 70%;
    transition: 0.3ms;
+   padding-top: 0px;
+   padding-right: 400px;
 }
 .button-row-container3 img{
-  position: top;
-  align-items: top;
-   max-width: 70%;
-   max-height: 70%;
-   z-index: 1;
-   transition: 0.2s ease-in-out;
-   padding-top: 0px;
-   padding-right: 70px;
-   padding-bottom: 0px;
+   position: top;
+   align-items: top;
+    max-width: 30%;
+    max-height: 30%;
+    z-index: 1;
+    transition: 0.2s ease-in-out;
+    padding-top: 20px;
+    padding-right: 450px;
 }
 .button-row-container3:hover img {
   z-index: 3; 
@@ -170,25 +175,26 @@ button {
 .button-row-container4 {
    display: flex;
    flex-direction: column; /* Ensures the button and image are in a column layout */
-   position: absolute;
- bottom: 35px; /* Adjust the value to control how far from the bottom */
- left: 50%;
- right:  30%;
- transform: translateX(-20%);
+   position: relative;
+   bottom: 35px; /* Adjust the value to control how far from the bottom */
+   left: 50%;
+   right:  60%;
+   transform: translateX(-20%);
    max-width: 50%;
    max-height: 70%;
    transition: 0.3ms;
+   padding-top: 0px;
+ 
 }
 .button-row-container4 img{
   position: top;
   align-items: top;
-   max-width: 70%;
-   max-height: 70%;
+   max-width: 30%;
+   max-height: 30%;
    z-index: 1;
    transition: 0.2s ease-in-out;
-   padding-top: 0px;
-   padding-right: 70px;
-   padding-bottom: 0px;
+   padding-top: 20px;
+   padding-right: 550px;
 }
 .button-row-container4:hover img {
   z-index: 3; 
@@ -196,3 +202,190 @@ button {
   filter: brightness(0) invert(1);
   
 }
+@font-face {
+   font-family: 'Inter';
+   src: url('~assets/fonts/Inter-4.0/Inter-Regular.woff2') format('woff2'),
+        url('~assets/fonts/Inter-4.0/Inter-Regular.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+ }
+ 
+ @font-face {
+   font-family: 'Inter';
+   src: url('~assets/fonts/Inter-4.0/Inter-Bold.woff2') format('woff2'),
+        url('~assets/fonts/Inter-4.0/Inter-Bold.woff') format('woff');
+   font-weight: bold;
+   font-style: normal;
+ }
+ 
+.resume-container {
+   width: 80%;
+   margin: auto;
+   font-family: 'Inter', Helvetica;
+   background-color: #c6075a;
+   padding: 20px;
+   padding-top: 700px;
+   border-radius: 8px;
+   box-shadow: 0 2px 10px rgba(248, 248, 248, 0.148);
+ }
+ 
+ .resume-header h2 {
+   text-align: center;
+   padding-top: 100px;
+ }
+ 
+ .resume-header p {
+   padding-top: 0px;
+   text-align: center;
+   font-size: 14px;
+   color: #f5f5f5;
+ }
+ 
+ .resume-section {
+   padding-top: 0px;
+   margin-bottom: 20px;
+   font-weight: 1000;
+   font-size: 16px;
+ }
+ 
+ .resume-section h2 {
+   color: #f5f5f5;
+   margin-bottom: 8px;
+ }
+ 
+ .download-button-container {
+   text-align: center;
+   margin-top: 30px;
+   margin-bottom: 30px;
+ }
+ 
+ .download-button {
+   background-color: #ffbf00;
+   color: rgb(229, 8, 107);
+   padding: 10px 20px;
+   text-decoration: none;
+   border-radius: 5px;
+ }
+
+ .download-button:hover {
+   background-color: #11720a;
+ }
+
+ .projects-section {
+   width: 80%;
+   margin: 0 auto;
+   font-family: 'Inter', sans-serif;
+   padding: 20px;
+   padding-top: 550px;
+   background-color: #c6075a
+ }
+ 
+ .projects-section h2, h3 {
+   color: #ffffff;
+ }
+ 
+ .projects-section p, ul {
+   color: #f3f3f3;
+   font-weight: 750;
+   font-size: 16px;
+   margin-bottom: 20px;
+ }
+ 
+ ul {
+   list-style-type: disc;
+   padding-left: 20px;
+   color: #f3f3f3;
+ }
+ 
+ .github-button-container {
+   margin-top: 20px;
+   text-align: center;
+   padding-bottom: 30px;
+ }
+ 
+ .github-button {
+   background-color: #0a0a0a;
+   font: 'Inter', sans-serif;
+   color: rgb(252, 43, 43);
+   padding: 10px 20px;
+   border-radius: 5px;
+   text-decoration: none;
+   margin-bottom: 20px;
+ }
+ 
+ .github-button:hover {
+   background-color: #444;
+ }
+
+ .contact-page {
+   padding-bottom: 20px;
+   padding-top: 100px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 20vh;
+   text-align: center;
+   background-color: #c6075a;
+ }
+ 
+ h2 {
+   padding-top: 40px;
+   font-family: 'Inter', sans-serif;
+   font-size: 32px;
+   margin-bottom: 10px;
+ }
+ 
+ .button-container {
+   margin: 10px 0;
+ }
+ 
+ .contact-button {
+   display: flex;
+   flex-direction: row;
+   font-family: 'Inter', sans-serif;
+   font-size: 32px;
+   align-items: center;
+   color: white;
+   background-color: #0077b5; /* LinkedIn blue */
+   padding: 10px, 10px;
+   border-radius: 30px;
+   max-width: fit-content;
+   text-decoration: none;
+   transition: background-color 0.3s ease;
+   justify-content: center;
+   padding-bottom: 0px;
+ }
+ 
+ .contact-button i {
+   margin-right: 0px;
+   font-size: 55px;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+ }
+ .contact-button img{
+   position: relative;
+   align-items: center;
+   justify-content: center;
+   max-width: 10%;
+   max-height: 10%;
+   padding-left: 2px;
+   padding-right: 2px;
+   padding-top: 0px;
+ }
+ 
+ .contact-button:hover {
+   background-color: #005983; /* Darker LinkedIn blue on hover */
+ }
+ 
+ .button-row-container3 {
+   margin-top: 10px;
+   padding-top: 10px;
+   padding-bottom: 40px;
+ }
+ 
+ img {
+   max-width: 100%;
+   height: auto;
+ }
