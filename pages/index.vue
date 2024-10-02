@@ -23,7 +23,7 @@ const route = useRoute()
           <button class="resume-button">
             <img src="~assets/1xx/1x/Asset 9.png" alt="buttonpng" border="0" />
           </button>
-          <img src="~assets/Asset 20.png" alt="buttonpng" border="0" />
+          <img src="~assets/1xx/1x/1x/Asset 20.png" alt="buttonpng" border="0" />
         </NuxtLink> 
         </div>
 
