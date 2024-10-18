@@ -108,7 +108,7 @@ const route = useRoute();
 
     <!-- Button to Download Resume as PDF -->
     <div class="download-button-container">
-        <a href="/path/to/Joshua Guillen Resume.pdf" download class="download-button">Download PDF</a>
+        <a href="~/assets/resume/Joshua Guillen Resume.pdf" download class="download-button">Download PDF</a>
     </div>
 </div>
 <HomeButton />
