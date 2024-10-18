@@ -118,12 +118,21 @@ img {
 .resume-container {
   padding-top: 10px;
 }
+.resume-header{
+  text-align: center;
+  border: #e0dbdf;
+  border-bottom: #e0dbdf;
+}
 
 .resume-header h2 {
   text-align: center;
   padding-top: 20px;
   justify-content: center;
   align-items: center;
+}
+
+.resume-container p2{
+  text-align: left;
 }
 
 .projects-section {
