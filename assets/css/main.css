@@ -1,391 +1,262 @@
+/* Global Styles */
 body {
-   background-color: #c6075a;
-   background-size: cover;
-   margin: 0;
-   padding: 0;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 100vh;
-}
-h1 img{
-   margin-top: auto;
-   margin-bottom: auto;
+  background-color: #c6075a;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-h2, p, button {
-   background-color: #c6075a;
-}
-
+/* Image Responsiveness */
 img {
-   max-width: 100%;
-   max-height: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
-.button-container {
-   position: relative;
-   display: flex;
-   justify-content: center;
-   align-items: baseline;
-   transition: 0.3ms;
-}
-.button-row-container{
-   position: relative;
-    display: flex;
-    flex-direction: column; /* Ensures the button and image are in a column layout */
-    justify-content: center; /* Center vertically */
-    align-items: baseline; /* Center horizontally */
-    max-width: 100%;
-    max-height: 100%;
-    transition: 0.3ms;
-}
-.button-row-container img{
-   position: top;
-   align-items: baseline;
-    max-width: 100%;
-    max-height: 100%;
-    z-index: 1;
-    transition: 0.2s ease-in-out;
-    padding-top: 10px;
-    padding-bottom: 0px;
-}
-.button-row-container:hover img {
-   z-index: 3; 
-   animation: strobe 0.2s infinite alternate;
-   filter: brightness(0) invert(1);
-   
-}
-.image-container2 {
-   position: absolute;
-   display: flex;
-   flex-direction: row; /* Ensures the button and image are in a column layout */
-   justify-content: center; /* Center vertically */
-   align-items: baseline; /* Center horizontally */
-   gap: 40px;
-   max-width: 100%;
-   max-height: 100%;
-   padding: 10px;
-   transition: 0.3ms;
+/* Button and Image Containers */
+.button-container, .button-row-container, .image-container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.1ms;
 }
 
-.image-container2 img {
-   position: static;
-   max-width: 100%;
-   max-height: 100%;
-   top: 0;
-   left: 0;
-   z-index: 1;
-   transition: 0.2s ease-in-out;
+.button-container{
+  margin-top: 10px;
 }
 
-.image-container2:hover img {
-   z-index: 3; /* Bring the image on top */
-   animation: strobe 0.2s infinite alternate;
-
+.button-row-container {
+  flex-direction: column;
+  max-width: 100%;
+  margin-top: 10px;
 }
 
-@keyframes strobe {
-   0% {
-       opacity: 0; /* Hidden */
-       
-   }
-   50% {
-       opacity: 1; /* Visible */
-   }
-   100% {
-       opacity: 0; /* Hidden */
-   }
+/* General Image Styling */
+.button-row-container img, 
+.button-row-container2 img, 
+.button-row-container3 img, 
+.button-row-container4 img {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+  transition: 0.3s ease-in-out;
 }
 
-button {
-   position: relative;
-   background-color: transparent;
-   border: none;
-   cursor: pointer;
-   overflow: hidden;
-   outline: none;
-   z-index: 2;
-   padding: 20px 40px; /* Padding for a better button appearance */
-   font-size: 16px;
-   transition: 0.1ms;
-   color: white;
-}
-
-.button-row-container2 {
-   display: flex;
-   flex-direction: column; /* Ensures the button and image are in a column layout */
-   position: relative;
-   bottom: 35px; /* Adjust the value to control how far from the bottom */
-   left: 50%;
-   right:  60%;
-   transform: translateX(-20%);
-   max-width: 50%;
-   max-height: 70%;
-   transition: 0.3ms;
-   padding-top: 0px;
-}
-.button-row-container2 img{
-   position: top;
-   align-items: top;
-    max-width: 30%;
-    max-height: 30%;
-    z-index: 1;
-    transition: 0.2s ease-in-out;
-    padding-top: 20px;
-    padding-right: 550px;
-}
-.button-row-container2:hover img {
-   z-index: 3; 
-   animation: strobe 0.2s infinite alternate;
-   filter: brightness(0) invert(1);
-   
-}
-
-.button-row-container3 {
-   display: flex;
-   flex-direction: column; /* Ensures the button and image are in a column layout */
-   position: relative;
-   bottom: 35px; /* Adjust the value to control how far from the bottom */
-   left: 50%;
-   right:  90%;
-   transform: translateX(-20%);
-   max-width: 50%;
-   max-height: 70%;
-   transition: 0.3ms;
-   padding-top: 0px;
-   padding-right: 400px;
-}
-.button-row-container3 img{
-   position: top;
-   align-items: top;
-    max-width: 30%;
-    max-height: 30%;
-    z-index: 1;
-    transition: 0.2s ease-in-out;
-    padding-top: 20px;
-    padding-right: 450px;
-}
-.button-row-container3:hover img {
-  z-index: 3; 
-  animation: strobe 0.2s infinite alternate;
-  filter: brightness(0) invert(1);
-  
-}
-
-.button-row-container4 {
-   display: flex;
-   flex-direction: column; /* Ensures the button and image are in a column layout */
-   position: relative;
-   bottom: 35px; /* Adjust the value to control how far from the bottom */
-   left: 50%;
-   right:  60%;
-   transform: translateX(-20%);
-   max-width: 50%;
-   max-height: 70%;
-   transition: 0.3ms;
-   padding-top: 0px;
- 
-}
-.button-row-container4 img{
-  position: top;
-  align-items: top;
-   max-width: 30%;
-   max-height: 30%;
-   z-index: 1;
-   transition: 0.2s ease-in-out;
-   padding-top: 20px;
-   padding-right: 550px;
-}
+/* Hover Effects */
+.button-row-container:hover img,
+.button-row-container2:hover img,
+.button-row-container3:hover img,
 .button-row-container4:hover img {
-  z-index: 3; 
-  animation: strobe 0.2s infinite alternate;
+  z-index: 3;
+  animation: strobe 0.5s infinite alternate;
   filter: brightness(0) invert(1);
+}
+
+/* Specific Button Row Container Adjustments */
+.button-row-container2 {
+  position: relative;
+  flex-direction: column;
+  gap: 0;
+  padding: 0;
+  margin-top: 100px;
+ 
+}
+
+.button-row-container2 img {
+  position: relative; /* Stays at the bottom even when scrolling */
+  left: 50%; /* Center horizontally */
+  bottom: 20px; /* Adjust distance from the bottom */
+  transform: translateX(-50%); /* Offset to perfectly center */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px; /* Adjust width as needed */
+  margin-top: 100px;
   
 }
-@font-face {
-   font-family: 'Inter';
-   src: url('~assets/fonts/Inter-4.0/Inter-Regular.woff2') format('woff2'),
-        url('~assets/fonts/Inter-4.0/Inter-Regular.woff') format('woff');
-   font-weight: normal;
-   font-style: normal;
- }
- 
- @font-face {
-   font-family: 'Inter';
-   src: url('~assets/fonts/Inter-4.0/Inter-Bold.woff2') format('woff2'),
-        url('~assets/fonts/Inter-4.0/Inter-Bold.woff') format('woff');
-   font-weight: bold;
-   font-style: normal;
- }
- 
+
+/* Home Button Styling */
+.home-button {
+  position: absolute; /* Stays at the bottom even when scrolling */
+  left: 55%; /* Center horizontally */
+  bottom: 45px; /* Adjust distance from the bottom */
+  transform: translateX(-50%); /* Offset to perfectly center */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px; /* Adjust width as needed */
+}
+
+
+.home-button img {
+  max-width: 100px;
+  max-height: 100px;
+  transition: 0.3s ease;
+}
+.button-row-container3, .button-row-container4 {
+  padding-right: 100px;
+}
+
+/* Resume and Projects Sections */
+.resume-container, .projects-section {
+  width: 80%;
+  margin: auto;
+  font-family: 'Inter', Helvetica, sans-serif;
+  color: #e0dbdf;
+  background-color: #c6075a;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(248, 248, 248, 0.148);
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
 .resume-container {
-   width: 80%;
-   margin: auto;
-   font-family: 'Inter', Helvetica;
-   background-color: #c6075a;
-   padding: 20px;
-   padding-top: 700px;
-   border-radius: 8px;
-   box-shadow: 0 2px 10px rgba(248, 248, 248, 0.148);
- }
- 
- .resume-header h2 {
-   text-align: center;
-   padding-top: 250px;
- }
- 
- .resume-header p {
-   padding-top: 0px;
-   text-align: center;
-   font-size: 14px;
-   color: #f5f5f5;
- }
- 
- .resume-section {
-   padding-top: 0px;
-   margin-bottom: 20px;
-   font-weight: 1000;
-   font-size: 16px;
- }
- 
- .resume-section h2 {
-   color: #f5f5f5;
-   margin-bottom: 8px;
- }
- 
- .download-button-container {
-   text-align: center;
-   margin-top: 30px;
-   margin-bottom: 30px;
- }
- 
- .download-button {
-   background-color: #ffbf00;
-   color: rgb(229, 8, 107);
-   padding: 10px 20px;
-   text-decoration: none;
-   border-radius: 5px;
- }
+  padding-top: 10px;
+}
 
- .download-button:hover {
-   background-color: #11720a;
- }
+.resume-header h2 {
+  text-align: center;
+  padding-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
 
- .projects-section {
-   width: 80%;
-   margin: 0 auto;
-   font-family: 'Inter', sans-serif;
-   padding: 20px;
-   padding-top: 550px;
-   background-color: #c6075a
- }
- 
- .projects-section h2, h3 {
-   color: #ffffff;
- }
- 
- .projects-section p, ul {
-   color: #f3f3f3;
-   font-weight: 750;
-   font-size: 16px;
-   margin-bottom: 20px;
- }
- 
- ul {
-   list-style-type: disc;
-   padding-left: 20px;
-   color: #f3f3f3;
- }
- 
- .github-button-container {
-   margin-top: 20px;
-   text-align: center;
-   padding-bottom: 30px;
- }
- 
- .github-button {
-   background-color: #0a0a0a;
-   font: 'Inter', sans-serif;
-   color: rgb(252, 43, 43);
-   padding: 10px 20px;
-   border-radius: 5px;
-   text-decoration: none;
-   margin-bottom: 20px;
- }
- 
- .github-button:hover {
-   background-color: #444;
- }
+.projects-section {
+  padding-top: 50px;
+  margin-bottom: 15px;
+}
 
- .contact-page {
-   padding-bottom: 20px;
-   padding-top: 100px;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   height: 20vh;
-   text-align: center;
-   background-color: #c6075a;
- }
- 
- h2 {
-   padding-top: 40px;
-   font-family: 'Inter', sans-serif;
-   font-size: 32px;
-   margin-bottom: 10px;
- }
- 
- .button-container {
-   margin: 10px 0;
- }
- 
- .contact-button {
-   display: flex;
-   flex-direction: row;
-   font-family: 'Inter', sans-serif;
-   font-size: 32px;
-   align-items: center;
-   color: white;
-   background-color: #0077b5; /* LinkedIn blue */
-   padding: 10px, 10px;
-   border-radius: 30px;
-   max-width: fit-content;
-   text-decoration: none;
-   transition: background-color 0.3s ease;
-   justify-content: center;
-   padding-bottom: 0px;
- }
- 
- .contact-button i {
-   margin-right: 0px;
-   font-size: 55px;
-   justify-content: center;
-   align-items: center;
-   position: relative;
- }
- .contact-button img{
-   position: relative;
-   align-items: center;
-   justify-content: center;
-   max-width: 10%;
-   max-height: 10%;
-   padding-left: 2px;
-   padding-right: 2px;
-   padding-top: 0px;
- }
- 
- .contact-button:hover {
-   background-color: #005983; /* Darker LinkedIn blue on hover */
- }
- 
- .button-row-container3 {
-   margin-top: 10px;
-   padding-top: 10px;
-   padding-bottom: 40px;
- }
- 
- img {
-   max-width: 100%;
-   height: auto;
- }
+/* Responsive Layout for Small Screens */
+@media (max-width: 600px) {
+  .projects-section, .resume-container, .button-row-container2, .button-row-container3, .button-row-container4 {
+      width: 95%;
+      padding: 20px 10px;
+      max-width: 100%;
+      transform: none;
+      padding-right: 0;
+      margin-bottom: 20px;
+  }
+
+  .button-row-container2 img, 
+  .button-row-container3 img, 
+  .button-row-container4 img {
+      max-width: 60%;
+  }
+
+  .resume-header h2 {
+    color: #e0dbdf;
+      padding-top: 100px;
+  }
+}
+
+/* Button Styles */
+button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 20px 40px;
+  z-index: 2;
+  outline: none;
+  justify-content: center;
+}
+
+/* Contact Button */
+.contact-button {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  align-items: center;
+  color: white;
+  background-color: #000000;
+  padding: 10px;
+  border-radius: 20px;
+  max-width: 400px;
+  max-height: 300px;
+  text-decoration: none;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  gap: 10px;
+}
+
+.contact-button:hover, .download-button:hover, .github-button:hover {
+  background-color: #e0dbdf;
+}
+
+.contact-button img{
+  max-height: 150px;
+
+}
+
+/* Download and GitHub Buttons */
+.download-button, .github-button {
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.download-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.download-button {
+  background-color: #ffbf00;
+  color: rgb(229, 8, 107);
+  transition: background-color 0.3s ease;
+  justify-content: center;
+  align-items: center;
+}
+
+.github-button {
+  margin-top: 20px;
+  background-color: #0a0a0a;
+  color: rgb(252, 43, 43);
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Strobe Animation */
+@keyframes strobe {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+.home-button-container {
+  position: fixed;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+.home-button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-button img {
+  max-width: 50px; /* Adjust size as necessary */
+  max-height: 50px;
+  transition: 0.3s ease;
+}

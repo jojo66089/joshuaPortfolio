@@ -1,10 +1,11 @@
 <script setup lang="ts">
+import HomeButton from '../components/HomeButton.vue';
 const route = useRoute()
 </script>
 
 <template>
-      <!-- Projects Section -->
-    <div class="projects-section">
+     <!-- Projects Section -->
+     <div class="projects-section">
         <img src="~assets/1xx/1x/1x/1x/Asset 24.png">
       <h2>Projects </h2>
 
@@ -61,16 +62,7 @@ const route = useRoute()
          <!-- GitHub Button -->
     <div class="github-button-container">
         <a href="https://github.com/jojo66089/Examples" target="_blank" rel="noopener" class="github-button">Explore More Projects on GitHub</a>
+    </div>    
     </div>
-
-      <div class="button-row-container2">
-            <NuxtLink to="/" class="projects-button">
-                <button class="home-button">
-                    <img src="~assets/1xx/1x/1x/1x/Asset 25.png" alt="buttonpng" border="0" />
-                </button>
-                <img src="~assets/1xx/1x/1x/Asset 17.png" alt="buttonpng" border="0" />
-            </NuxtLink>
-        </div>
-    </div>
-
+    <HomeButton />
 </template>
