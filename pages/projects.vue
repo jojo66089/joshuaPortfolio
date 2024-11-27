@@ -12,7 +12,7 @@ const route = useRoute()
       <!-- Sporacle Project Overview -->
       <h3>Sporacle — Self Project</h3>
       <p>
-        <strong>Overview:</strong> Sporacle is an innovative web application designed to provide users with personalized astrological readings based on their Spotify listening habits. This project combines my interests in web development, data analysis, and machine learning, utilizing Spotify's API and OpenAI's GPT-3.5 to create a unique and engaging user experience.
+        <strong>Overview:</strong> Sporacle is a web application designed to provide users with personalized astrological readings based on their Spotify listening habits. This project combines my interests in web development, data analysis, and machine learning, utilizing Spotify's API and OpenAI's GPT-3.5 to create a unique and engaging user experience.
       </p>
       <h4>Project Links (Clickable):</h4>
       <ul>
