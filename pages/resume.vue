@@ -30,7 +30,7 @@ const route = useRoute();
             <span style="float:right;">September 2024 - October 2024</span>
         </p>
         <ul>
-            <li>Designed and developed a professional portfolio using Nuxt.js, showcasing a diverse skill set across front-end and back-end technologies.</li>
+            <li>Designed and developed a portfolio using Nuxt.js, showcasing a diverse skill set across front-end and back-end technologies.</li>
             <li>Utilized a component-based architecture for scalability and maintainability, tailored to provide a seamless user experience with dedicated sections for projects, resume, and contact information.</li>
             <li>Built with responsive design principles to ensure compatibility across devices, particularly iPhones and other mobile platforms.</li>
             <li>Deployed the site on Vercel for fast, reliable hosting, optimized for global distribution and zero-downtime updates.</li>
@@ -62,17 +62,17 @@ const route = useRoute();
         <p style="text-align:left;"><strong>Social Media Manager - Our Roots (Short-Film), NYU, New York, NY</strong>
             <span style="float:right;">October 2021 - May 2022</span>
         </p>
-        <p>Engineered a social media strategy that skyrocketed user engagement by 50%, leveraging analytics tools to track performance and guide marketing decisions.</p>
+        <p>Engineered a social media strategy that increased user engagement by 50%, leveraging analytics tools to track performance and guide marketing decisions.</p>
 
         <p style="text-align:left;"><strong>Data Science Club, NYU</strong>
             <span style="float:right;">September 2023 - Present</span>
         </p>
-        <p>Cultivated a vibrant community of data science enthusiasts, driving increased participation through organizing speaking engagements and competitive coding events.</p>
+        <p>Joined community of data science enthusiasts, driving increased participation through organizing speaking engagements and competitive coding events.</p>
 
         <p style="text-align:left;"><strong>HackNYU Participant</strong>
             <span style="float:right;">November 2023</span>
         </p>
-        <p>Excelled in a 48-hour hackathon, developing a solution to address a global health challenge which was recognized in the top 10% of entries.</p>
+        <p>Participated in a 48-hour hackathon, developing a solution to address a global health challenge.</p>
 
         <p style="text-align:left;"><strong>Hello Deli (Line Cook)</strong>
             <span style="float:right;">May 2023 - August 2023</span>
