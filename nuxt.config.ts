@@ -1,14 +1,14 @@
 export default defineNuxtConfig({
-  compatibilityDate: '2024-04-03',
-  devtools: { enabled: true },
-  
-  css: ['~/assets/css/main.css'],
+  // ← NUXT handles vite + postcss order
+  modules: ['@nuxtjs/tailwindcss'],
 
-  app: {
-    head: {
-      meta: [
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' }
-      ]
-    }
-  }
+  css: [
+    '~/assets/css/main.scss',         // keep your file as SCSS
+    '~/assets/css/view-transition.css'
+  ],
+
+  experimental: { viewTransition: true },
+  future:       { compatibilityVersion: 3 },
+  app:          { viewTransition: true },
+  compatibilityDate: '2025-04-23'
 })
