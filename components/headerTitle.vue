@@ -31,6 +31,8 @@
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
   margin-bottom: 5%;
+  margin-top: 5%;
+  padding-top: 5%;
   padding-bottom:5%;
 
 
