@@ -43,7 +43,7 @@
 
 .home-button img {
   max-width: 30%;
-  height: 30%;
+  max-height: 30%;
   transition: 0.3s ease;
 }
 
