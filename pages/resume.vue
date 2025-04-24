@@ -107,10 +107,10 @@ const route = useRoute()
         </div>
 
         <!-- Button to Download Resume as PDF -->
-        <div class="download-button-container">
-            <a href="/resume/Joshua%20Guillen%20Resume.pdf" download class="download-button">Download PDF</a>
+        <div class="flex justify-center">
+            <a href="/resume/Joshua%20Guillen%20Resume.pdf" download>Download PDF</a>
         </div>
-    </div>
+     </div>
     <HomeButton></HomeButton>
 
 </template>
