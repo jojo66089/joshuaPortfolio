@@ -11,31 +11,31 @@ const route = useRoute()
             <p>New York, NY | (505) 550-6909 | <a href="mailto:jg6949@nyu.edu">jg6949@nyu.edu</a> </p>
         </div>
 
-        <!-- Education Section -->
-        <div class="resume-section">
-            <h2><strong> EDUCATION</strong></h2>
-            <hr>
-            <p><strong>New York University (NYU), New York, NY</strong></p>
-            <li>Bachelor of Arts in Computer Science, Minors in Business Media Entertainment and Technology</li>
-            <li>Expected Graduation: May 2025</li>
-            <li>Cumulative GPA: 3.53/4.00</li>
-        </div>
+    <!-- Education Section -->
+    <div class="resume-section">
+        <h2>EDUCATION</h2>
+        <hr>
+        <p><strong>New York University (NYU), New York, NY</strong></p>
+        <p>Bachelor of Arts in Computer Science, Minors in Business Media Entertainment and Technology</p>
+        <p>Expected Graduation: May 2025</p>
+        <p>Cumulative GPA: 3.34/4.00</p>
+    </div>
 
         <!-- Technical/Project Experience -->
         <div class="resume-section">
             <h2><strong>TECHNICAL/PROJECT EXPERIENCE</strong></h2>
             <hr>
 
-            <p style="text-align:left;"><strong>Portfolio Website - Self-Project</strong>
-                <span style="float:right;">September 2024 - October 2024</span>
-            </p>
-            <ul>
-                <li>Designed and developed a professional portfolio using Nuxt.js, showcasing a diverse skill set across front-end and back-end technologies.</li>
-                <li>Utilized a component-based architecture for scalability and maintainability, tailored to provide a seamless user experience with dedicated sections for projects, resume, and contact information.</li>
-                <li>Built with responsive design principles to ensure compatibility across devices, particularly iPhones and other mobile platforms.</li>
-                <li>Deployed the site on Vercel for fast, reliable hosting, optimized for global distribution and zero-downtime updates.</li>
-                <li>Website link: <a href="http://www.joshua-guillen.com">www.joshua-guillen.com</a></li>
-            </ul>
+        <p style="text-align:left;"><strong>Portfolio Website - Self-Project</strong>
+            <span style="float:right;">September 2024 - October 2024</span>
+        </p>
+        <ul>
+            <li>Designed and developed a professional portfolio using Nuxt.js, showcasing a diverse skill set across front-end and back-end technologies.</li>
+            <li>Utilized a component-based architecture for scalability and maintainability, tailored to provide a seamless user experience with dedicated sections for projects, resume, and contact information.</li>
+            <li>Built with responsive design principles to ensure compatibility across devices, particularly iPhones and other mobile platforms.</li>
+            <li>Deployed the site on Vercel for fast, reliable hosting, optimized for global distribution and zero-downtime updates.</li>
+            <li>Website link: <a href="http://www.joshua-guillen.com">www.joshua-guillen.com</a></li>
+        </ul>
 
             <p style="text-align:left;"><strong>Sporacle - Self-Project</strong>
                 <span style="float:right;">January 2024 - June 2024</span>
@@ -59,20 +59,20 @@ const route = useRoute()
             </p>
             <li>Barista and espresso bar certified (Green Passport).</li>
 
-            <p style="text-align:left;"><strong>Social Media Manager - Our Roots (Short-Film), NYU, New York, NY</strong>
-                <span style="float:right;">October 2021 - May 2022</span>
-            </p>
-            <li>Engineered a social media strategy that skyrocketed user engagement by 50%, leveraging analytics tools to track performance and guide marketing decisions.</li>
+        <p style="text-align:left;"><strong>Social Media Manager - Our Roots (Short-Film), NYU, New York, NY</strong>
+            <span style="float:right;">October 2021 - May 2022</span>
+        </p>
+        <p>Engineered a social media strategy that skyrocketed user engagement by 50%, leveraging analytics tools to track performance and guide marketing decisions.</p>
 
-            <p style="text-align:left;"><strong>Data Science Club, NYU</strong>
-                <span style="float:right;">September 2023 - Present</span>
-            </p>
-            <li>Cultivated a vibrant community of data science enthusiasts, driving increased participation through organizing speaking engagements and competitive coding events.</li>
+        <p style="text-align:left;"><strong>Data Science Club, NYU</strong>
+            <span style="float:right;">September 2023 - Present</span>
+        </p>
+        <p>Cultivated a vibrant community of data science enthusiasts, driving increased participation through organizing speaking engagements and competitive coding events.</p>
 
-            <p style="text-align:left;"><strong>HackNYU Participant</strong>
-                <span style="float:right;">November 2023</span>
-            </p>
-            <li>Excelled in a 48-hour hackathon, developing a solution to address a global health challenge which was recognized in the top 10% of entries.</li>
+        <p style="text-align:left;"><strong>HackNYU Participant</strong>
+            <span style="float:right;">November 2023</span>
+        </p>
+        <p>Excelled in a 48-hour hackathon, developing a solution to address a global health challenge which was recognized in the top 10% of entries.</p>
 
             <p style="text-align:left;"><strong>Hello Deli (Line Cook)</strong>
                 <span style="float:right;">May 2023 - August 2023</span>
