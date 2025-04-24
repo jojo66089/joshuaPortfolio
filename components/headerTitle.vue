@@ -30,9 +30,9 @@
   animation-delay: 0.5s;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
-  margin-bottom: 5%;
-  margin-top: 2%;
-  padding-bottom:5%;
+  margin-bottom: 1%;
+  margin-top: 0%;
+  padding-bottom:2%;
 
 
   .left {
@@ -116,8 +116,8 @@
 
   }
 }
-@media (max-width: 600px) {
-  .logo { max-width: 180px;}
+@media (max-width: auto) {
+  .logo { max-width: auto;}
 }
 
 </style>
