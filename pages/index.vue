@@ -40,9 +40,6 @@ const route = useRoute()
       </NuxtLink>
     </nav>
 
-    <NuxtLink to="/" class="home-btn" aria-label="Home">
-      <img src="~assets/1xx/1x/1x/1x/Asset 24.png" alt="Home" />
-    </NuxtLink>
   </header>
 </template>
 
