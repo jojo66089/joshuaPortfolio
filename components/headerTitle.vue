@@ -55,6 +55,7 @@
   }
   
   .intro .logo {
+    flex-grow: 1;
     transform: translateX(250);
     clip-path: inset(0% 50% 0% 50%);
     animation: reveal 350ms ease-in-out;
