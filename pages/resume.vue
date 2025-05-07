@@ -18,7 +18,7 @@ const route = useRoute()
         <p><strong>New York University (NYU), New York, NY</strong></p>
         <p>Bachelor of Arts in Computer Science, Minors in Business Media Entertainment and Technology</p>
         <p>Expected Graduation: May 2025</p>
-        <p>Cumulative GPA: 3.34/4.00</p>
+        <p>Cumulative GPA: 3.74/4.00</p>
     </div>
 
         <!-- Technical/Project Experience -->
