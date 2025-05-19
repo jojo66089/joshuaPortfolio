@@ -182,6 +182,8 @@ body {
 }
 .btn-row {
   animation: revealb 1s cubic-bezier(0.19, 1, 0.22, 1);
+  align-items: center;
+  justify-content: center;
   animation-delay: 0.7s;
   animation-fill-mode: forwards;
 }

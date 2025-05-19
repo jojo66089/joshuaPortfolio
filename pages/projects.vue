@@ -6,65 +6,298 @@ const route = useRoute()
 
 <template>
   <headerTitle></headerTitle>
-  <div class="resume-container">
-    <hr>
-    <h2><strong>Projects</strong></h2>
+  <div class="projects-container invisible" style="animation: revealb 500ms; animation-delay: 0.5s; animation-fill-mode: forwards;">
+    <h2 class="section-title">Projects</h2>
 
-      <!-- Sporacle Project Overview -->
-      <h3>Sporacle — Self Project</h3>
-      <p>
-        <strong>Overview:</strong> Sporacle is a web application designed to provide users with personalized astrological readings based on their Spotify listening habits. This project combines my interests in web development, data analysis, and machine learning, utilizing Spotify's API and OpenAI's GPT-3.5 to create a unique and engaging user experience.
-      </p>
-      <h4>Project Links (Clickable):</h4>
-      <ul>
-        <li>
-          <a href="https://github.com/jojo66089/Sporacle" target="_blank" rel="noopener">GitHub Repository</a>
-        </li>
-        <li>
-          <a href="http://www.mysporacle.com/" target="_blank" rel="noopener">Live Web Application</a>
-        </li>
-      </ul>
+    <!-- Sporacle Project -->
+    <section class="project-section">
+      <div class="project-header">
+        <h3>Sporacle</h3>
+        <span class="project-type">Self Project</span>
+      </div>
 
-      <h4>Key Features:</h4>
-      
-        <li><strong>Personalized Readings:</strong> Leveraging Spotify's API, Sporacle fetches users' top tracks and artists, analyzing their listening habits to generate unique, personalized astrological readings using OpenAI's GPT-3.5.</li>
-        <li><strong>OAuth Authentication:</strong> Secure OAuth authentication allows users to log in with their Spotify accounts while ensuring data privacy and secure access.</li>
-        <li><strong>Real-Time Data Processing:</strong> Processes real-time data from Spotify to provide up-to-date readings, enhancing relevance and accuracy.</li>
-        <li><strong>Responsive Design:</strong> Features a user-friendly, responsive design for seamless experience across devices and screen sizes.</li>
-        <li><strong>Secure Deployment:</strong> Deployed on Heroku with custom domain and HTTPS security compliance for a reliable user experience.</li>
-        <li><strong>API Rate Limits:</strong> Developed exponential backoff retry logic to handle API rate limits, ensuring reliable data fetching.</li>
-        <li><strong>Cross-Origin Requests:</strong> Addressed CORS issues to enable smooth communication between frontend and backend.</li>
-    
+      <div class="project-content">
+        <p class="project-description">
+          Sporacle is a web application designed to provide users with personalized astrological readings based on their Spotify listening habits. This project combines my interests in web development, data analysis, and machine learning, utilizing Spotify's API and OpenAI's GPT-3.5 to create a unique and engaging user experience.
+        </p>
 
-      <h4><strong>Technical Stack:</strong></h4>
-      
-        <li><strong>Backend:</strong> Node.js, Express.js</li>
-        <li><strong>Frontend:</strong> HTML, CSS, JavaScript, Handlebars.js, jQuery</li>
-        <li><strong>APIs:</strong> Spotify Web API, OpenAI GPT-3.5 API</li>
-        <li><strong>Authentication:</strong> OAuth 2.0</li>
-        <li><strong>Hosting:</strong> Heroku</li>
-        <li><strong>Version Control:</strong> Git, GitHub</li>
-  
+        <div class="project-links">
+          <a href="https://github.com/jojo66089/Sporacle" target="_blank" rel="noopener" class="project-link">
+            GitHub Repository
+          </a>
+          <a href="http://www.mysporacle.com/" target="_blank" rel="noopener" class="project-link">
+            Live Web Application
+          </a>
+        </div>
 
-      <!-- Additional Projects & Courses -->
-      <h4><strong>Additional Projects & Courses Taken:</strong></h4>
-      
-        <li>Intro to Computer Science, Section 008</li>
-        <li>Data Structures, Section 001</li>
-        <li>Operating Systems, Section 001</li>
-        <li>Probability & Statistics, Section C01</li>
-        <li>Object Oriented Programming, Section 001</li>
-        <li>Basic Algorithms, Section 001 (Spring 2024)</li>
-        <li>Discrete Mathematics, Section 006</li>
-        <li>Computer Systems Organization, Section 005</li>
-    
+        <div class="features-section">
+          <h4>Key Features</h4>
+          <ul class="feature-list">
+            <li>
+              <strong>Personalized Readings:</strong> Leveraging Spotify's API, Sporacle fetches users' top tracks and artists, analyzing their listening habits to generate unique, personalized astrological readings using OpenAI's GPT-3.5.
+            </li>
+            <li>
+              <strong>OAuth Authentication:</strong> Secure OAuth authentication allows users to log in with their Spotify accounts while ensuring data privacy and secure access.
+            </li>
+            <li>
+              <strong>Real-Time Data Processing:</strong> Processes real-time data from Spotify to provide up-to-date readings, enhancing relevance and accuracy.
+            </li>
+            <li>
+              <strong>Responsive Design:</strong> Features a user-friendly, responsive design for seamless experience across devices and screen sizes.
+            </li>
+            <li>
+              <strong>Secure Deployment:</strong> Deployed on Heroku with custom domain and HTTPS security compliance for a reliable user experience.
+            </li>
+          </ul>
+        </div>
 
-      <p>Most of the projects have been school-based, along with some website-building projects, all accessible on my <a href="https://github.com/jojo66089/Examples" target="_blank" rel="noopener">GitHub repository</a>.</p>
-         <!-- GitHub Button -->
-    <div class="github-button-container">
-        <a href="https://github.com/jojo66089/Examples" target="_blank" rel="noopener" class="github-button">Explore More Projects on GitHub</a>
-    </div> 
-       
-    </div>
-    <HomeButton />
+        <div class="tech-stack">
+          <h4>Technical Stack</h4>
+          <div class="tech-grid">
+            <div class="tech-category">
+              <h5>Backend</h5>
+              <p>Node.js, Express.js</p>
+            </div>
+            <div class="tech-category">
+              <h5>Frontend</h5>
+              <p>HTML, CSS, JavaScript, Handlebars.js, jQuery</p>
+            </div>
+            <div class="tech-category">
+              <h5>APIs</h5>
+              <p>Spotify Web API, OpenAI GPT-3.5 API</p>
+            </div>
+            <div class="tech-category">
+              <h5>Authentication</h5>
+              <p>OAuth 2.0</p>
+            </div>
+            <div class="tech-category">
+              <h5>Hosting</h5>
+              <p>Heroku</p>
+            </div>
+            <div class="tech-category">
+              <h5>Version Control</h5>
+              <p>Git, GitHub</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Additional Projects & Courses -->
+    <section class="courses-section">
+      <h3>Additional Projects & Courses</h3>
+      <div class="courses-grid">
+        <div class="course-item">Intro to Computer Science, Section 008</div>
+        <div class="course-item">Data Structures, Section 001</div>
+        <div class="course-item">Operating Systems, Section 001</div>
+        <div class="course-item">Probability & Statistics, Section C01</div>
+        <div class="course-item">Object Oriented Programming, Section 001</div>
+        <div class="course-item">Basic Algorithms, Section 001 (Spring 2024)</div>
+        <div class="course-item">Discrete Mathematics, Section 006</div>
+        <div class="course-item">Computer Systems Organization, Section 005</div>
+        <div class="course-item">Special Topics in Programming Languages</div>
+        <div class="course-item">Data Science Club (Project Coordinator), NYU</div>
+        <div class="course-item">Natural Language Processing, Section 003</div>
+        <div class="course-item">Machine Learning, Section 001</div>
+        <div class="course-item">Applied Internet Technologies, Section 001</div>
+        <div class="course-item">Special Topics: Computer Graphics, Section 002</div>
+      </div>
+
+      <div class="github-section">
+        <p>Most of the projects have been school-based, along with some website-building projects, all accessible on my GitHub repository.</p>
+        <a href="https://github.com/jojo66089/Examples" target="_blank" rel="noopener" class="github-button">
+          Explore More Projects on GitHub
+        </a>
+      </div>
+    </section>
+  </div>
+  <HomeButton />
 </template>
+
+<style scoped>
+.projects-container {
+  max-width: 800px;
+  margin: 1.5rem auto;
+  padding: 1.5rem;
+  padding-bottom: 130px;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.project-section {
+  margin-bottom: 2rem;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.75rem;
+}
+
+.project-header h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.project-type {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.project-content {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.project-description {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin-bottom: 1.25rem;
+}
+
+.project-links {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-link {
+  padding: 0.6rem 1.25rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: opacity 0.2s;
+  font-size: 0.9rem;
+}
+
+.project-link:hover {
+  opacity: 0.8;
+}
+
+.features-section h4,
+.tech-stack h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.feature-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.feature-list li {
+  position: relative;
+  padding-left: 1.25rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+  font-size: 0.9rem;
+}
+
+.feature-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 0.75rem;
+}
+
+.tech-category h5 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.tech-category p {
+  line-height: 1.4;
+  font-size: 0.85rem;
+}
+
+.courses-section {
+  margin-top: 2rem;
+}
+
+.courses-section h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.course-item {
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 6px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.github-section {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.github-section p {
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.github-button {
+  display: inline-block;
+  padding: 0.6rem 1.25rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: opacity 0.2s;
+  font-size: 0.9rem;
+}
+
+.github-button:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .projects-container {
+    margin: 1rem;
+    padding: 1rem;
+    padding-bottom: 100px;
+  }
+
+  .project-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project-type {
+    margin-top: 0.15rem;
+  }
+
+  .project-links {
+    flex-direction: column;
+  }
+
+  .tech-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .courses-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>

@@ -1,117 +1,310 @@
 <script setup lang="ts">
 import headerTitle from '~/components/headerTitle.vue';
+import HomeButton from '../components/HomeButton.vue';
 const route = useRoute()
-
 </script>
-<template>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <headerTitle></headerTitle>
-        <div class="resume-container">
-        <!-- Resume Header -->
-        <div class="resume-header">
-            <p>New York, NY | (505) 550-6909 | <a href="mailto:jg6949@nyu.edu">jg6949@nyu.edu</a> </p>
-        </div>
 
-    <!-- Education Section -->
-    <div class="resume-section">
-        <h2>EDUCATION</h2>
-        <hr>
-        <p><strong>New York University (NYU), New York, NY</strong></p>
-        <p>Bachelor of Arts in Computer Science, Minors in Business Media Entertainment and Technology</p>
-        <p>Expected Graduation: May 2025</p>
-        <p>Cumulative GPA: 3.74/4.00</p>
+<template>
+  <headerTitle></headerTitle>
+  <div class="resume-container invisible" style="animation: revealb 500ms; animation-delay: 0.5s; animation-fill-mode: forwards;">
+    <!-- Resume Header -->
+    <div class="resume-header">
+      <div class="contact-info">
+        <span>New York, NY</span>
+        <span class="separator">•</span>
+        <span>(505) 550-6909</span>
+        <span class="separator">•</span>
+        <a href="mailto:jg6949@nyu.edu">jg6949@nyu.edu</a>
+      </div>
     </div>
 
-        <!-- Technical/Project Experience -->
-        <div class="resume-section">
-            <h2><strong>TECHNICAL/PROJECT EXPERIENCE</strong></h2>
-            <hr>
+    <!-- Education Section -->
+    <section class="resume-section">
+      <h2 class="section-title">Education</h2>
+      <div class="section-content">
+        <div class="entry">
+          <div class="entry-header">
+            <h3>New York University (NYU)</h3>
+            <span class="location">New York, NY</span>
+          </div>
+          <p class="degree" style="font-size: 1.0rem;">Bachelor of Arts in Computer Science</p>
+          <p class="minor" style="font-size: 0.9rem;">Minors in Business Media Entertainment and Technology</p>
+          <p class="details" style="font-size: 0.9rem; font-weight: 600;">Graduated: May 2025 • GPA: 3.74/4.00</p>
+        </div>
+        <div class="entry">
+          <div class="entry-header">
+            <h3>Animations On the Web Bootcamp</h3>
+            <span class="location">New York, NY</span>
+          </div>
+          <p class="details" style="font-size: 0.9rem;">March 2025</p>
+          <a href="https://drive.google.com/file/d/1YXWmz7STWWGzC12N3SxhM_oxjau__KMm/view?usp=drive_link" class="link" target="_blank" rel="noopener" style="font-size: 0.9rem; justify-items: center;">Certificate of Completion</a>
+        </div>
+      </div>
+    </section>
 
-        <p style="text-align:left;"><strong>Portfolio Website - Self-Project</strong>
-            <span style="float:right;">September 2024 - October 2024</span>
-        </p>
-        <ul>
-            <li>Designed and developed a professional portfolio using Nuxt.js, showcasing a diverse skill set across front-end and back-end technologies.</li>
-            <li>Utilized a component-based architecture for scalability and maintainability, tailored to provide a seamless user experience with dedicated sections for projects, resume, and contact information.</li>
-            <li>Built with responsive design principles to ensure compatibility across devices, particularly iPhones and other mobile platforms.</li>
-            <li>Deployed the site on Vercel for fast, reliable hosting, optimized for global distribution and zero-downtime updates.</li>
-            <li>Website link: <a href="http://www.joshua-guillen.com">www.joshua-guillen.com</a></li>
-        </ul>
-
-            <p style="text-align:left;"><strong>Sporacle - Self-Project</strong>
-                <span style="float:right;">January 2024 - June 2024</span>
-            </p>
-            <ul>
-                <li>Full-stack development using JavaScript, Node.js, Express, and Spotify’s API to provide users with personalized astrological readings based on their Spotify listening habits.</li>
-                <li>Implemented OAuth authentication and real-time data processing with Spotify’s API.</li>
-                <li>Deployed the application on Heroku, configured custom domains, and ensured HTTPS security compliance to provide a seamless user experience.</li>
-                <li>GitHub: <a href="https://github.com/jojo66089/Sporacle">https://github.com/jojo66089/Sporacle</a></li>
-                <li>WebApp: <a href="http://www.mysporacle.com/">http://www.mysporacle.com/</a></li>
-            </ul>
+    <!-- Technical/Project Experience -->
+    <section class="resume-section">
+      <h2 class="section-title">Technical Experience</h2>
+      <div class="section-content">
+        <div class="entry">
+          <div class="entry-header">
+            <h3>Product Design & Community Intern, Ubiq</h3>
+            <span class="date">January 2025 - Present</span>
+          </div>
+          <ul class="achievement-list">
+            <li>UX/UI design and QA testing of new app features. Support ideation, creation of product roadmaps, and data analysis to build a strong engaging user experience.</li>
+            <li>Worked with engineers/senior developers in roadmap planning and execution, and contributed to sprint planning and review meetings as well as conducting 1:1 Product Review Interviews as a form of User Data Extraction.</li>
+          </ul>
         </div>
 
-        <!-- Work Experience Section -->
-        <div class="resume-section">
-            <h2><strong>WORK EXPERIENCE</strong></h2>
-            <hr>
-
-            <p style="text-align:left;"><strong>Starbucks (Barista)</strong>
-                <span style="float:right;">June 2024 - Present</span>
-            </p>
-            <li>Barista and espresso bar certified (Green Passport).</li>
-
-        <p style="text-align:left;"><strong>Social Media Manager - Our Roots (Short-Film), NYU, New York, NY</strong>
-            <span style="float:right;">October 2021 - May 2022</span>
-        </p>
-        <p>Engineered a social media strategy that skyrocketed user engagement by 50%, leveraging analytics tools to track performance and guide marketing decisions.</p>
-
-        <p style="text-align:left;"><strong>Data Science Club, NYU</strong>
-            <span style="float:right;">September 2023 - Present</span>
-        </p>
-        <p>Cultivated a vibrant community of data science enthusiasts, driving increased participation through organizing speaking engagements and competitive coding events.</p>
-
-        <p style="text-align:left;"><strong>HackNYU Participant</strong>
-            <span style="float:right;">November 2023</span>
-        </p>
-        <p>Excelled in a 48-hour hackathon, developing a solution to address a global health challenge which was recognized in the top 10% of entries.</p>
-
-            <p style="text-align:left;"><strong>Hello Deli (Line Cook)</strong>
-                <span style="float:right;">May 2023 - August 2023</span>
-            </p>
-            <li>Prepared a wide array of sandwiches, soups, and breakfast items from scratch.</li>
-
-            <p style="text-align:left;"><strong>Panda Express (Cashier)</strong>
-                <span style="float:right;">June 2023 - August 2023</span>
-            </p>
-            <li>Cashiered food items to customers in a fast-paced environment.</li>
-
-            <p style="text-align:left;"><strong>Flying Star Café (Sauté Cook)</strong>
-                <span style="float:right;">May 2021 - August 2021</span>
-            </p>
-            <li>Prepared breakfast items, sauces, entrée sides, from scratch in a fast-paced environment.</li>
-
-            <p style="text-align:left;"><strong>McDonald’s (Crew Trainer/Crew Member)</strong>
-                <span style="float:right;">May 2017 - January 2021</span>
-            </p>
-            <li>Cashiered fast food items, counted the safe, took monthly inventory, and got ServeSafe certified.</li>
+        <div class="entry">
+          <div class="entry-header">
+            <h3>Full Stack Development Portfolio Website</h3>
+            <span class="date">September 2024 - October 2024</span>
+          </div>
+          <ul class="achievement-list">
+            <li>Designed and implemented all graphics and animations (CSS and Framer Motion) on Nuxt.js and React.js</li>
+            <li>Deployed the site on Vercel for reliable hosting and optimized for wide distribution and zero-downtime updates</li>
+          </ul>
         </div>
 
-        <!-- Technical Skills Section -->
-        <div class="resume-section">
-            <h2><strong>TECHNICAL SKILLS AND PROFESSIONAL INTERESTS</strong></h2>
-            <hr>
-            <li>Languages: Java, Python, C/C++, Swift, JavaScript, HTML, SQL, MongoDB</li>
-            <li>Databases: Neo4j</li>
-            <li>Tools & Frameworks: Git, XGBoost, Data Analysis, Machine Learning</li>
-            <li>Systems: Linux x86, Windows</li>
-            <li>Spoken Languages: Spanish (fluent), English (fluent), French (intermediate)</li>
+        <div class="entry">
+          <div class="entry-header">
+            <h3>Back-End Focused Development Sporacle</h3>
+            <span class="date">January 2024 - June 2024</span>
+          </div>
+          <ul class="achievement-list">
+            <li>Designed and implemented a web application using Javascript, Node.js, Express, and Spotify's API to provide users with personalized oracle readings based on their Spotify listening habits</li>
+            <li>Integrated secure OAuth authentication to allow users to log in with their Spotify accounts, ensuring data privacy and secure access</li>
+            <li>Utilized Spotify's API to fetch users' top tracks and artists, and employed OpenAI's GPT-3.5 wrapper for generating unique, engaging readings based on their music preferences</li>
+            <li>GitHub: <a href="https://github.com/jojo66089/Sporacle" class="link" target="_blank" rel="noopener">https://github.com/jojo66089/Sporacle</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Experience -->
+    <section class="resume-section">
+      <h2 class="section-title">Work Experience</h2>
+      <div class="section-content">
+        <div class="entry">
+          <div class="entry-header">
+            <h3>Social Media Manager – Our Roots (Short-Film)</h3>
+            <span class="date">October 2021 - May 2022</span>
+          </div>
+          <p class="location">NYU, New York, NY</p>
+          <ul class="achievement-list">
+            <li>Engineered a social media strategy that skyrocketed user engagement by 50%, leveraging analytics tools to track performance and guide marketing decisions</li>
+          </ul>
         </div>
 
-        <!-- Button to Download Resume as PDF -->
-        <div class="flex justify-center">
-            <a href="/resume/Joshua%20Guillen%20Resume.pdf" download>Download PDF</a>
+        <div class="entry">
+          <div class="entry-header">
+            <h3>Data Science Club, NYU</h3>
+            <span class="date">September 2023 - April 2024</span>
+          </div>
+          <ul class="achievement-list">
+            <li>Cultivated a vibrant community of data science enthusiasts, driving increased participation through organizing speaking engagements and competitive coding events</li>
+          </ul>
         </div>
-     </div>
-    <HomeButton></HomeButton>
 
+        <div class="entry">
+          <div class="entry-header">
+            <h3>McDonald's</h3>
+            <span class="date">May 2017 - January 2021</span>
+          </div>
+          <p class="role">Crew Trainer/Crew Member</p>
+          <ul class="achievement-list">
+            <li>Cashiered Fast Food items, counted the safe, took monthly inventory, and got ServeSafe Certified</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section class="resume-section">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="section-content">
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h4>Languages</h4>
+            <p>Java, Python, C/C++, Swift, JavaScript, HTML, SQL, CSS, TailwindCSS</p>
+          </div>
+          <div class="skill-category">
+            <h4>Databases & Tools</h4>
+            <p>Neo4js, Figma, MongoDB</p>
+          </div>
+          <div class="skill-category">
+            <h4>Systems</h4>
+            <p>Linux x86, Windows</p>
+          </div>
+          <div class="skill-category">
+            <h4>Languages</h4>
+            <p>Spanish (fluent), English (fluent), French (intermediate)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download Button -->
+    <div class="download-container">
+      <a href="/resume/Joshua%20Guillen%20Resume.pdf" download class="download-button">
+        Download PDF Resume
+      </a>
+    </div>
+  </div>
+  <HomeButton />
 </template>
+
+<style scoped>
+.resume-container {
+  max-width: 800px;
+  margin: 1.5rem auto;
+  padding: 1.5rem;
+  padding-bottom: 130px;
+}
+
+.resume-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.name {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.contact-info {
+  font-size: 0.95rem;
+}
+
+.separator {
+  margin: 0 0.5rem;
+}
+
+.resume-section {
+  margin-bottom: 1.5rem;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid;
+}
+
+.entry {
+  margin-bottom: 1.25rem;
+}
+
+.entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.25rem;
+}
+
+.entry-header h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.date {
+  font-size: 0.85rem;
+}
+
+.role, .location {
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+}
+
+.achievement-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.achievement-list li {
+  position: relative;
+  padding-left: 1.25rem;
+  margin-bottom: 0.35rem;
+  line-height: 1.4;
+  font-size: 0.9rem;
+}
+
+.achievement-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+}
+
+.link {
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.link:hover {
+  opacity: 0.8;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.skill-category h4 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.skill-category p {
+  line-height: 1.4;
+  font-size: 0.85rem;
+}
+
+.download-container {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.download-button {
+  display: inline-block;
+  padding: 0.6rem 1.25rem;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: opacity 0.2s;
+  font-size: 0.9rem;
+}
+
+.download-button:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .resume-container {
+    margin: 1rem;
+    padding: 1rem;
+    padding-bottom: 100px;
+  }
+
+  .name {
+    font-size: 2rem;
+  }
+
+  .entry-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .date {
+    margin-top: 0.15rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>

@@ -47,4 +47,63 @@ const route = useRoute()
 
 </script>
 
-<style src="~/assets/css/main.scss"></style>
+<style scoped>
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 800px;
+}
+
+.btn-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.btn-row:hover {
+  transform: translateY(-5px);
+}
+
+.btn-row img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .button-group {
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .btn-row img {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .button-group {
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .btn-row img {
+    max-width: 70%;
+  }
+}
+</style>

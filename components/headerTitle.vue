@@ -30,6 +30,8 @@
     margin-bottom: 1%;
     margin-top: 0%;
     padding-bottom: 2%;
+    position: relative;
+    z-index: 10;
   }
   
   .intro .left {
@@ -64,6 +66,59 @@
     animation-fill-mode: forwards;
     cursor: pointer; /* Add pointer cursor to indicate it's clickable */
     display: block; /* Ensure NuxtLink retains the proper display */
+  }
+  
+  .intro img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .intro {
+      transform: scale(2.5) translateY(50%);
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  
+    .intro .left {
+      transform: translateX(-150%);
+    }
+  
+    .intro .right {
+      transform: translateX(150%);
+    }
+  
+    .intro .logo img {
+      max-width: 90px;
+    }
+  
+    .intro .left img,
+    .intro .right img {
+      max-width: 70px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .intro {
+      transform: scale(2) translateY(50%);
+    }
+  
+    .intro .left {
+      transform: translateX(-120%);
+    }
+  
+    .intro .right {
+      transform: translateX(120%);
+    }
+  
+    .intro .logo img {
+      max-width: 70px;
+    }
+  
+    .intro .left img,
+    .intro .right img {
+      max-width: 50px;
+    }
   }
   
   @keyframes scaleLogo {
@@ -113,12 +168,6 @@
       transform: translateY(0%);
       visibility: visible;
       opacity: 1;
-    }
-  }
-  
-  @media (max-width: auto) {
-    .logo {
-      max-width: auto;
     }
   }
   </style>
