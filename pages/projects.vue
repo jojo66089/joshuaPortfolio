@@ -246,6 +246,7 @@ const route = useRoute()
         <div class="course-item">Machine Learning, Section 001</div>
         <div class="course-item">Applied Internet Technologies, Section 001</div>
         <div class="course-item">Special Topics: Computer Graphics, Section 002</div>
+        <div class="course-item">Animations On the Web (Web Design Course), Emil Kowalski</div>
       </div>
 
       <div class="github-section">
