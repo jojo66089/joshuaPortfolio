@@ -223,7 +223,7 @@ const route = useRoute()
 
     <!-- Download Button -->
     <div class="download-container">
-      <a href="/resume/Joshua%20Guillen%20Resume.pdf" download class="download-button">
+      <a href="/resume/Joshua_Guillen_Resume.pdf" download class="download-button">
         Download PDF Resume
       </a>
     </div>
