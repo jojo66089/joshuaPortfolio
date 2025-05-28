@@ -115,6 +115,7 @@ const scrollToTop = () => {
   .home-button img,
   .secondary-img {
     max-width: 15%;
+    max-height: 15%;
   }
 }
 </style>
