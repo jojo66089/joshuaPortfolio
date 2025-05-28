@@ -59,6 +59,19 @@ const route = useRoute()
 
         <div class="entry">
           <div class="entry-header">
+            <h3>AI Text Authenticator</h3>
+            <span class="date">NLP Capstone • NYU</span>
+          </div>
+          <ul class="achievement-list">
+            <li>Built a production‑ready classifier that detects LLM‑generated text, achieving >92% F1 on 6 open‑source corpora using scikit‑learn (LR/SVM/RF)</li>
+            <li>Engineered hybrid linguistic + TF‑IDF features; automated GridSearchCV hyper‑tuning and POS‑tag error analysis</li>
+            <li>Containerised a Flask API + web demo, deployed to AWS EC2 with HTTPS, PyTest CI, and GitHub Actions</li>
+            <li>GitHub: <a href="https://github.com/jojo66089/NLP_final_project" class="link" target="_blank" rel="noopener">https://github.com/jojo66089/NLP_final_project</a></li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-header">
             <h3>Full Stack Development Portfolio Website</h3>
             <span class="date">September 2024 - October 2024</span>
           </div>
@@ -80,6 +93,18 @@ const route = useRoute()
             <li>GitHub: <a href="https://github.com/jojo66089/Sporacle" class="link" target="_blank" rel="noopener">https://github.com/jojo66089/Sporacle</a></li>
           </ul>
         </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <h3>Atlantis</h3>
+            <span class="date">Full‑Stack Capstone • Next.js 14 & React 18</span>
+          </div>
+          <ul class="achievement-list">
+            <li>Built a music‑discovery web app with sub‑150 ms type‑ahead search (Discogs + Spotify APIs) and offline‑ready playlist caching; crafted responsive UI/UX with Tailwind CSS, Sass themes, and React Context state</li>
+            <li>Added JWT‑based auth, React‑Hook‑Form + Yup validation, and CI/CD to Vercel via GitHub Actions (ESLint/Prettier); users can save, re‑order, and drag‑drop tracks across devices</li>
+            <li>GitHub: <a href="https://github.com/jojo66089/AtlantisFinalProject" class="link" target="_blank" rel="noopener">https://github.com/jojo66089/AtlantisFinalProject</a></li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -89,22 +114,72 @@ const route = useRoute()
       <div class="section-content">
         <div class="entry">
           <div class="entry-header">
-            <h3>Social Media Manager – Our Roots (Short-Film)</h3>
-            <span class="date">October 2021 - May 2022</span>
+            <h3>Barista, Starbucks</h3>
+            <span class="date">June 2024 - Present</span>
           </div>
-          <p class="location">NYU, New York, NY</p>
           <ul class="achievement-list">
-            <li>Engineered a social media strategy that skyrocketed user engagement by 50%, leveraging analytics tools to track performance and guide marketing decisions</li>
+            <li>Learned to craft beverages and memorize them; obtained espresso bar certification (Green Passport)</li>
           </ul>
         </div>
 
         <div class="entry">
           <div class="entry-header">
             <h3>Data Science Club, NYU</h3>
-            <span class="date">September 2023 - April 2024</span>
+            <span class="date">September 2023 - Present</span>
           </div>
           <ul class="achievement-list">
             <li>Cultivated a vibrant community of data science enthusiasts, driving increased participation through organizing speaking engagements and competitive coding events</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <h3>HackNYU Participant</h3>
+            <span class="date">November 2023</span>
+          </div>
+          <ul class="achievement-list">
+            <li>Excelled in a 48-hour hackathon, developing a solution to address a global health challenge which was recognized in the top 10% of entries</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <h3>Line Cook, Hello Deli</h3>
+            <span class="date">May 2023 - August 2023</span>
+          </div>
+          <ul class="achievement-list">
+            <li>Prepared a wide array of sandwiches, soups, and breakfast items from scratch</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <h3>Cashier, Panda Express</h3>
+            <span class="date">June 2023 - August 2023</span>
+          </div>
+          <ul class="achievement-list">
+            <li>Cashiered food items to customers in a fast paced environment</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <h3>Sauté Cook, Flying Star Café</h3>
+            <span class="date">May 2021 - August 2021</span>
+          </div>
+          <ul class="achievement-list">
+            <li>Prepared breakfast items, sauces, entrée sides, from scratch in a fast paced environment</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <h3>Social Media Manager – Our Roots (Short-Film)</h3>
+            <span class="date">October 2021 - May 2022</span>
+          </div>
+          <p class="location">NYU, New York, NY</p>
+          <ul class="achievement-list">
+            <li>Engineered a social media strategy that skyrocketed user engagement by 50%, leveraging analytics tools to track performance and guide marketing decisions</li>
           </ul>
         </div>
 
