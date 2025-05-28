@@ -1,0 +1,96 @@
+/* Safari-specific fixes */
+@supports (-webkit-touch-callout: none) {
+  /* Container fixes */
+  .projects-container,
+  .resume-container,
+  .contact-container {
+    width: auto;
+    max-width: auto;
+    margin: 0;
+    padding: 10px;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    font-size: 20px; /* Base font size for better readability */
+  }
+
+  /* Image fixes */
+  img {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    object-fit: contain;
+  }
+
+  /* Grid and flex fixes */
+  .tech-grid,
+  .courses-grid,
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    width: 100%;
+  }
+
+  /* Text and content fixes */
+  .project-content,
+  .section-content {
+    width: auto;
+    max-width: auto;
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+
+  /* Typography fixes */
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
+
+  p, li, span {
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+
+  /* Button and link fixes */
+  .project-link,
+  .download-button,
+  .github-button {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    font-size: 1.6rem;
+    padding: 0.6rem 1.25rem;
+  }
+
+  /* Mobile specific fixes */
+  @media (max-width: 1044px) {
+    .projects-container,
+    .resume-container,
+    .contact-container {
+      padding: 1rem;
+      margin: 0;
+      width: 100%;
+      font-size: 18px; /* Maintain readable font size on mobile */
+    }
+
+    .tech-grid,
+    .courses-grid,
+    .skills-grid {
+      grid-template-columns: 1fr;
+    }
+
+    /* Ensure text remains readable on mobile */
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.6rem; }
+    h3 { font-size: 1.6rem; }
+    h4 { font-size: 1.6rem; }
+    p, li, span { font-size: 1.6rem; }
+  }
+
+  /* Ensure proper viewport scaling */
+  @viewport {
+    width: device-width;
+    zoom: 0.8;
+  }
+} 

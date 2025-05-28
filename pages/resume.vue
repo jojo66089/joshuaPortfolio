@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import headerTitle from '~/components/headerTitle.vue';
 import HomeButton from '../components/HomeButton.vue';
+import DownloadButton from '../components/DownloadButton.vue';
 const route = useRoute()
 </script>
 
@@ -222,21 +223,81 @@ const route = useRoute()
     </section>
 
     <!-- Download Button -->
-    <div class="download-container">
-      <a href="/resume/Joshua_Guillen_Resume.pdf" download class="download-button">
-        Download PDF Resume
-      </a>
-    </div>
+    <DownloadButton />
   </div>
   <HomeButton />
 </template>
 
 <style scoped>
+/* Base styles */
 .resume-container {
-  max-width: 800px;
-  margin: 1.5rem auto;
-  padding: 1.5rem;
-  padding-bottom: 130px;
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 2rem;
+  padding-bottom: 150px;
+}
+
+/* Safari-specific fixes */
+@supports (-webkit-touch-callout: none) {
+  .resume-container {
+    max-width: 800px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    padding: 2rem !important;
+    padding-bottom: 100px !important;
+    font-size: 16px !important;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .section-title {
+    font-size: 2rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .entry-header h3 {
+    font-size: 1.25rem !important;
+  }
+
+  .entry p, .entry li {
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+  }
+
+  .achievement-list li {
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .skills-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
+    gap: 1.5rem !important;
+  }
+
+  .skill-category h4 {
+    font-size: 1.1rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .skill-category p {
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+  }
+
+  @media (max-width: 768px) {
+    .resume-container {
+      padding: 1rem !important;
+    }
+
+    .section-title {
+      font-size: 1.8rem !important;
+    }
+
+    .entry-header h3 {
+      font-size: 1.2rem !important;
+    }
+  }
 }
 
 .resume-header {

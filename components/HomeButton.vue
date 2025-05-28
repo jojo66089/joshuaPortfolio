@@ -47,10 +47,11 @@ const scrollToTop = () => {
   width: 100%;
   margin: 0 auto;
   position: fixed;
-  bottom: 25px;
+  bottom: 0;
   left: 50%;
+  bottom: 10px;
   transform: translateX(-50%);
-  z-index: 100;
+  z-index: 1;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
@@ -59,6 +60,7 @@ const scrollToTop = () => {
 .show-button {
   opacity: 1;
   visibility: visible;
+  pointer-events: auto;
 }
 
 .projects-button {
@@ -78,21 +80,46 @@ const scrollToTop = () => {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: -10px;
-  margin-top: -3px;
+  margin-bottom:  0px;
+  margin-top: -15px;
   width: auto;
 }
 
 .home-button img {
   max-width: 30%;
   max-height: 30%;
-  transition: 0.3s ease;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  -webkit-transform: translateZ(0); /* Safari fix */
+  transform: translateZ(0);
 }
 
 .secondary-img {
   max-width: 30%;
-  height: 30%;
+  height: auto;
+  width: auto;
+  object-fit: contain;
+  -webkit-transform: translateZ(0); /* Safari fix */
+  transform: translateZ(0);
   transition: 0.3s ease-in-out;
+}
+
+/* Safari-specific fixes */
+@supports (-webkit-touch-callout: none) {
+  .home-button img,
+  .secondary-img {
+    width: 30%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: contain;
+  }
+
+  .projects-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .projects-button:hover .secondary-img {
@@ -106,16 +133,58 @@ const scrollToTop = () => {
   50% { opacity: 1; }
 }
 
-
 @media (max-width: 480px) {
   .home-button-container {
-    bottom: 10px;
+    bottom: 0;
+    padding-bottom: 0;
   }
 
+  .home-button img {
+    max-width: 25%;
+    max-height: 25%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .secondary-img {
+    max-width: 25%;
+    max-height: 25%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .projects-button {
+    transform: scale(0.8);
+  }
+
+  /* Safari mobile fixes */
+  @supports (-webkit-touch-callout: none) {
+    .home-button img,
+    .secondary-img {
+      width: 25%;
+      height: auto;
+      aspect-ratio: 1;
+    }
+  }
+}
+
+@media (max-width: 320px) {
   .home-button img,
   .secondary-img {
-    max-width: 15%;
-    max-height: 15%;
+    max-width: 20%;
+    max-height: 20%;
+  }
+
+  /* Safari mobile fixes */
+  @supports (-webkit-touch-callout: none) {
+    .home-button img,
+    .secondary-img {
+      width: 20%;
+      height: auto;
+      aspect-ratio: 1;
+    }
   }
 }
 </style>

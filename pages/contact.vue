@@ -45,17 +45,20 @@ const route = useRoute()
   align-items: center;
   min-height: 60vh;
   padding: 2rem;
-  padding-bottom: 130px;
+  padding-bottom: 160px;
+  max-width: auto;
+  height: auto;
 }
 
 .contact-content {
   text-align: center;
-  max-width: 800px;
-  width: 100%;
+  max-width: auto;
+  width: auto;
+  height: auto;
 }
 
 .contact-title {
-  font-size: 3rem;
+  font-size: 6em;
   font-weight: 600;
   margin-bottom: 1rem;
   color: #f8f9fa;
@@ -65,7 +68,7 @@ const route = useRoute()
 }
 
 .contact-subtitle {
-  font-size: 1.2rem;
+  font-size: 4em;
   color: #f8f9fa;
   margin-bottom: 3rem;
   opacity: 0;
@@ -78,6 +81,7 @@ const route = useRoute()
   justify-content: center;
   gap: 3rem;
   flex-wrap: wrap;
+  size: 4em;
 }
 
 .contact-link {
@@ -113,8 +117,8 @@ const route = useRoute()
 }
 
 .contact-icon {
-  width: 65px;
-  height: 65px;
+  width: 100px;
+  height: 100px;
   object-fit: fill;
 }
 

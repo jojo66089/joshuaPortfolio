@@ -4,7 +4,8 @@ export default defineNuxtConfig({
 
   css: [
     '~/assets/css/main.scss',         // keep your file as SCSS
-    '~/assets/css/view-transition.css'
+    '~/assets/css/view-transition.css',
+    '~/assets/safari-fixes.css'
   ],
 
   experimental: { viewTransition: true },

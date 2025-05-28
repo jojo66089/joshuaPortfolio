@@ -16,7 +16,7 @@
   .intro {
     display: flex;
     justify-content: center;
-    align-items: baseline;
+    align-items: center;
     max-width: auto;
     max-height: auto;
     overflow: visible;
@@ -32,10 +32,12 @@
     padding-bottom: 2%;
     position: relative;
     z-index: 10;
+    width: 100%;
   }
   
   .intro .left {
     transform: translateX(-190%);
+    left: 50%;
     overflow: visible;
     animation: xTranslate 450ms ease-in-out;
     animation-iteration-count: 1;
@@ -47,6 +49,7 @@
   
   .intro .right {
     transform: translateX(190%);
+    right: 50%;
     overflow: visible;
     animation: xrTranslate 450ms ease-in-out;
     animation-iteration-count: 1;
@@ -57,15 +60,23 @@
   }
   
   .intro .logo {
-    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transform: translateX(250);
     clip-path: inset(0% 50% 0% 50%);
     animation: reveal 350ms ease-in-out;
     animation-delay: 0.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    cursor: pointer; /* Add pointer cursor to indicate it's clickable */
-    display: block; /* Ensure NuxtLink retains the proper display */
+    cursor: pointer;
+  }
+  
+  .intro .logo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
   }
   
   .intro img {
@@ -175,6 +186,34 @@
       transform: translateY(0%);
       visibility: visible;
       opacity: 1;
+    }
+  }
+  
+  /* Safari-specific fixes */
+  @supports (-webkit-touch-callout: none) {
+    .intro {
+      transform: none !important;
+      animation: none !important;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+  
+    .intro .logo {
+      transform: none !important;
+      animation: none !important;
+      clip-path: none !important;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .intro .logo img {
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      margin: 0 auto;
     }
   }
   </style>

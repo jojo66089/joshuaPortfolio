@@ -261,11 +261,99 @@ const route = useRoute()
 </template>
 
 <style scoped>
+/* Base styles */
 .projects-container {
-  max-width: 800px;
-  margin: 1.5rem auto;
-  padding: 1.5rem;
-  padding-bottom: 130px;
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 2rem;
+  padding-bottom: 150px;
+}
+
+/* Safari-specific fixes */
+@supports (-webkit-touch-callout: none) {
+  .projects-container {
+    max-width: auto !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    padding: 2rem !important;
+    padding-bottom: 100px !important;
+    font-size: 16px !important;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .section-title {
+    font-size: 2rem !important;
+    margin-bottom: 2rem !important;
+  }
+
+  .project-section {
+    margin-bottom: 3rem !important;
+  }
+
+  .project-header h3 {
+    font-size: 1.5rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .project-type {
+    font-size: 1rem !important;
+  }
+
+  .project-description {
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .features-section h4 {
+    font-size: 1.25rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .feature-list li {
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  .tech-stack h4 {
+    font-size: 1.25rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .tech-category h5 {
+    font-size: 1.1rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .tech-category p {
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+  }
+
+  .courses-section h3 {
+    font-size: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .course-item {
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+  }
+
+  @media (max-width: 768px) {
+    .projects-container {
+      padding: 1rem !important;
+    }
+
+    .section-title {
+      font-size: 1.8rem !important;
+    }
+
+    .project-header h3 {
+      font-size: 1.3rem !important;
+    }
+  }
 }
 
 .section-title {
@@ -425,25 +513,12 @@ const route = useRoute()
     padding-bottom: 100px;
   }
 
-  .project-header {
-    flex-direction: column;
-    align-items: flex-start;
+  .section-title {
+    font-size: 1.8rem;
   }
 
-  .project-type {
-    margin-top: 0.15rem;
-  }
-
-  .project-links {
-    flex-direction: column;
-  }
-
-  .tech-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .courses-grid {
-    grid-template-columns: 1fr;
+  .project-header h3 {
+    font-size: 1.3rem;
   }
 }
 </style>
