@@ -58,7 +58,7 @@ const route = useRoute()
 }
 
 .contact-title {
-  font-size: 6em;
+  font-size: 2.5em;
   font-weight: 600;
   margin-bottom: 1rem;
   color: #f8f9fa;
@@ -68,9 +68,9 @@ const route = useRoute()
 }
 
 .contact-subtitle {
-  font-size: 4em;
+  font-size: 2em;
   color: #f8f9fa;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   opacity: 0;
   animation: fadeIn 0.5s ease-out forwards;
   animation-delay: 0.9s;
