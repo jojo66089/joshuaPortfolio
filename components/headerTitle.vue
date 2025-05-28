@@ -91,6 +91,8 @@
       transform: none !important;
       animation: none !important;
       clip-path: none !important;
+      max-width: auto;
+      max-height: fit-content;
     }
   
     .intro .logo img {

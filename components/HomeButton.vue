@@ -106,16 +106,6 @@ const scrollToTop = () => {
   50% { opacity: 1; }
 }
 
-@media (max-width: 768px) {
-  .home-button-container {
-    bottom: 15px;
-  }
-
-  .home-button img,
-  .secondary-img {
-    max-width: 28%;
-  }
-}
 
 @media (max-width: 480px) {
   .home-button-container {
@@ -124,7 +114,7 @@ const scrollToTop = () => {
 
   .home-button img,
   .secondary-img {
-    max-width: 25%;
+    max-width: 15%;
   }
 }
 </style>
