@@ -83,6 +83,151 @@ const route = useRoute()
       </div>
     </section>
 
+    <!-- AI‑Generated Text Detector -->
+    <section class="project-section">
+      <div class="project-header">
+        <h3>AI Text Authenticator</h3>
+        <span class="project-type">Academic Capstone · NLP @ NYU</span>
+      </div>
+
+      <div class="project-content">
+        <p class="project-description">
+          AI Text Authenticator is a production‑ready detector that flags whether a passage
+          was written by a human or a large‑language model.  
+          I designed the full ML pipeline — from feature engineering to a Flask web demo —
+          and achieved >92 % F1 across six public corpora.  
+          The project demonstrates my ability to translate cutting‑edge research into an
+          accessible tool for editors, educators, and policy makers.
+        </p>
+
+        <div class="project-links">
+          <a href="https://github.com/jojo66089/NLP_final_project" target="_blank" rel="noopener" class="project-link">
+            GitHub Repository
+          </a>
+          <a href="https://github.com/jojo66089/NLP_final_project/blob/main/Detection%20of%20AI%20generated%20Text%20through%20Supervised%20Learning.pdf" target="_blank" rel="noopener" class="project-link">
+            Research Paper (PDF)
+          </a>
+        </div>
+
+        <div class="features-section">
+          <h4>Key Highlights</h4>
+          <ul class="feature-list">
+            <li><strong>Hybrid Feature Set.</strong> Engineered 5 linguistic statistics
+                (e.g., entropy, repetitive‑word ratio) and fused them with TF‑IDF vectors
+                for richer signal.</li>
+            <li><strong>Robust Evaluation.</strong> Trained & tuned LR, SVM, and RF models
+                on 30 k examples (balanced human / machine) and reported precision, recall,
+                and F‑measure on held‑out test splits.</li>
+            <li><strong>Error Analysis.</strong> Built custom scripts to surface the 30 most
+                misclassified POS tags, guiding future feature work.</li>
+            <li><strong>Scalable Web Demo.</strong> Containerised a Flask front‑end so
+                stakeholders can upload text or CSVs and get instant authenticity scores.</li>
+            <li><strong>Security‑First DevOps.</strong> Added GitHub Actions for linting /
+                unit tests; deployed the demo on an AWS EC2 instance with HTTPS.</li>
+          </ul>
+        </div>
+
+        <div class="tech-stack">
+          <h4>Technical Stack</h4>
+          <div class="tech-grid">
+            <div class="tech-category">
+              <h5>Modeling</h5>
+              <p>scikit‑learn (LR · SVM · RF), GridSearchCV, Pandas</p>
+            </div>
+            <div class="tech-category">
+              <h5>Feature Eng.</h5>
+              <p>NLTK, SpaCy, custom statistical scripts</p>
+            </div>
+            <div class="tech-category">
+              <h5>Serving</h5>
+              <p>Flask, Gunicorn, Docker</p>
+            </div>
+            <div class="tech-category">
+              <h5>Testing & CI</h5>
+              <p>PyTest, GitHub Actions</p>
+            </div>
+            <div class="tech-category">
+              <h5>Hosting</h5>
+              <p>AWS EC2 (HTTPS via Nginx + Certbot)</p>
+            </div>
+            <div class="tech-category">
+              <h5>Collaboration</h5>
+              <p>Git, GitHub Projects</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Atlantis — Music Discovery Web App -->
+    <section class="project-section">
+      <div class="project-header">
+        <h3>Atlantis</h3>
+        <span class="project-type">Full‑Stack Capstone</span>
+      </div>
+
+      <div class="project-content">
+        <p class="project-description">
+          Atlantis is a Next.js + React web app that helps listeners unearth hidden‑gem
+          tracks and build playlists centred on artistic merit rather than charts.
+          I architected the UI, API layer, and local‑storage caching so sessions stay
+          lightning‑fast—even offline.
+        </p>
+
+        <div class="project-links">
+          <a href="https://github.com/jojo66089/AtlantisFinalProject" target="_blank" rel="noopener" class="project-link">
+            GitHub Repository
+          </a>
+        </div>
+
+        <div class="features-section">
+          <h4>Key Highlights</h4>
+          <ul class="feature-list">
+            <li><strong>Instant Discovery.</strong> Type‑ahead search pings the Discogs
+                API in < 150 ms, returning songs, albums, and artwork with debounced calls.</li>
+            <li><strong>Playlist Builder.</strong> One‑click "Add to Atlantis" bookmarks
+                a track in browser storage; re‑ordering and drag‑drop deletion feel native.</li>
+            <li><strong>Auth & Profiles.</strong> Mock login with hashed passwords and
+                JWT cookies lays the foundation for multi‑device sync.</li>
+            <li><strong>Adaptive Theming.</strong> Tailwind + Sass variables snap between
+                dark "ocean" mode and light "coral" mode based on system preference.</li>
+            <li><strong>Form Guardrails.</strong> React‑Hook‑Form validates inputs
+                client‑side; errors render inline for full a11y compliance.</li>
+          </ul>
+        </div>
+
+        <div class="tech-stack">
+          <h4>Technical Stack</h4>
+          <div class="tech-grid">
+            <div class="tech-category">
+              <h5>Frontend</h5>
+              <p>React 18, Next.js 14 (App Router), Tailwind CSS, Sass modules</p>
+            </div>
+            <div class="tech-category">
+              <h5>Backend / API</h5>
+              <p>Next.js API Routes, Node.js, Discogs REST, Spotify Web API</p>
+            </div>
+            <div class="tech-category">
+              <h5>State & Storage</h5>
+              <p>React Context, localStorage (playlists), JWT cookies</p>
+            </div>
+            <div class="tech-category">
+              <h5>Validation</h5>
+              <p>React‑Hook‑Form, Yup</p>
+            </div>
+            <div class="tech-category">
+              <h5>Tooling</h5>
+              <p>Vite, Webpack, ESLint, Prettier</p>
+            </div>
+            <div class="tech-category">
+              <h5>Deployment</h5>
+              <p>Vercel (CI/CD from GitHub)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Additional Projects & Courses -->
     <section class="courses-section">
       <h3>Additional Projects & Courses</h3>
