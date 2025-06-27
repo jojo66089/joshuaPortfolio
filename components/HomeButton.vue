@@ -2,7 +2,7 @@
   <div class="home-button-container" :class="{ 'show-button': isAtBottom }">
     <NuxtLink to="/" class="projects-button" @click="scrollToTop">
       <button class="home-button">
-        <img src="~assets/1xx/1x/1x/1x/Asset 25.png" alt="Home Button" />
+        <img src="~assets/1xx/1x/1x/1x/Asset 42.png" alt="Home Button" />
       </button>
       <img src="~assets/1xx/1x/1x/Asset 17.png" alt="buttonpng" class="secondary-img" />
     </NuxtLink>

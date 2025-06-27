@@ -1,11 +1,14 @@
 <script setup lang="ts">
 import headerTitle from '~/components/headerTitle.vue';
 import HomeButton from '../components/HomeButton.vue';
+import ParallaxStars from '~/components/ParallaxStars.vue';
 const route = useRoute()
 </script>
 
 <template>
   <headerTitle></headerTitle>
+  <ParallaxStars />
+
   <div class="projects-container invisible" style="animation: revealb 500ms; animation-delay: 0.5s; animation-fill-mode: forwards;">
     <h2 class="section-title">Projects</h2>
 

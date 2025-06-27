@@ -2,11 +2,13 @@
 import headerTitle from '~/components/headerTitle.vue';
 import HomeButton from '../components/HomeButton.vue';
 import DownloadButton from '../components/DownloadButton.vue';
+import ParallaxStars from '~/components/ParallaxStars.vue';
 const route = useRoute()
 </script>
 
 <template>
   <headerTitle></headerTitle>
+  <ParallaxStars />
   <div class="resume-container invisible" style="animation: revealb 500ms; animation-delay: 0.5s; animation-fill-mode: forwards;">
     <!-- Resume Header -->
     <div class="resume-header">
@@ -235,6 +237,8 @@ const route = useRoute()
   margin: 0 auto;
   padding: 2rem;
   padding-bottom: 150px;
+  position: relative;
+  z-index: 1;
 }
 
 /* Safari-specific fixes */

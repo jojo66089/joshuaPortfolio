@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --bg-main: #cd1e6a;
+  --bg-main: #000000;
   --text-light: #e0dbdf;
   --white: #ffffff;
   --black: #000000;
@@ -17,7 +17,7 @@
 }
 
 body {
-  margin: auto;
+  margin: 0;
   min-height: auto;
   min-width: auto;
   display: flexbox;
@@ -158,6 +158,8 @@ body {
 /* ——— header ——— */
 .header {
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .logo {

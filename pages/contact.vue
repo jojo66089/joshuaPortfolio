@@ -1,11 +1,13 @@
 <script setup lang="ts">
 import headerTitle from '~/components/headerTitle.vue';
 import HomeButton from '../components/HomeButton.vue';
+import ParallaxStars from '~/components/ParallaxStars.vue';
 const route = useRoute()
 </script>
 
 <template>
   <headerTitle></headerTitle>
+  <ParallaxStars />
   
   <div class="contact-container">
     <div class="contact-content" style="animation: revealb 500ms; animation-delay: 0.5s; animation-fill-mode: forwards;">
@@ -48,6 +50,8 @@ const route = useRoute()
   padding-bottom: 160px;
   max-width: auto;
   height: auto;
+  position: relative;
+  z-index: 1;
 }
 
 .contact-content {

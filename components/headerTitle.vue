@@ -29,7 +29,7 @@
     animation-iteration-count: 1;
     margin-bottom: 1%;
     margin-top: 0%;
-    padding-bottom: 2%;
+    padding-bottom: 0.5%;
     position: relative;
     z-index: 10;
     width: 100%;
